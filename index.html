@@ -1,376 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Om Tandulkar</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Dattaprasad Tandulkar | Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">PORTFOLIO</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav id="desktop-nav">
+<div class="logo">Om Tandulkar</div>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-    <nav id="hamburger-nav">
-        <div class="logo">Portfolio</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()" >About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-        </div>
+<section id="profile">
+<div class="section__text">
+<h1>Om Dattaprasad Tandulkar</h1>
+<h3>Software Test Engineer | AI/LLM Analyst | Full Stack Developer</h3>
+<p>Detail-oriented engineering graduate experienced in software testing, AI/LLM evaluation, Python, SQL, REST APIs and full-stack development.</p>
+<a class="btn" href="#">Download Resume</a>
+</div>
+</section>
 
+<section id="about">
+<h2>About Me</h2>
+<p>B.E. in Artificial Intelligence & Machine Learning (CGPA 7.43). Professional experience at Innodata as an AI/LLM Analyst and CodeSoft as a Web Developer Intern.</p>
+</section>
 
-    </nav>
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Innodata</h3>
+<p>AI/LLM Analyst (Nov 2025 – Jun 2026)</p>
+<ul>
+<li>LLM evaluation</li>
+<li>Prompt validation</li>
+<li>Data annotation</li>
+<li>Quality assurance</li>
+</ul>
+</div>
+<div class="card">
+<h3>CodeSoft</h3>
+<p>Web Developer Intern</p>
+<ul>
+<li>React.js UI</li>
+<li>REST APIs</li>
+<li>Node.js & Express</li>
+</ul>
+</div>
+</section>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/DSC_0231.JPG" alt="Om profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I am</p>
-            <h1 class="title">Om Tandulkar</h1>
-            <p class="section__text__p2">Software Tester, AI/LLM, Software Developer</p>
-            <div class="btn-container">
-                <button
-            class="btn btn-color-2"
-            onclick="window.open('https://drive.google.com/file/d/1XqnMGTM7GgI10881NBEOgli4F-ztNAgr/view?usp=sharing')"
-          >
-            Download CV
-          </button>
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='#contact'"
-          >
-            Contact Info
-          </button>
-            </div>
+<section id="skills">
+<h2>Skills</h2>
+<p>Python • Java • JavaScript • SQL • React • Node.js • Express • MongoDB • REST APIs • API Testing • Functional Testing • Automation Testing</p>
+</section>
 
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My Linkedin Profile" 
-                class="icon"
-                onclick="window.open('https://www.linkedin.com/in/om-tandulkar-945062231/')"
-                />
-                <img src="./assets/github.png" 
-                alt="My Github Profile" 
-                class="icon"
-                onclick="window.open('https://github.com/Omaa2233')"
-                />
-            </div>
+<section id="projects">
+<h2>Projects</h2>
+<div class="card"><h3>Work Manager</h3><p>Task management platform with role-based access, secure APIs and deadline monitoring.</p></div>
+<div class="card"><h3>Blood-Pulse</h3><p>Blood Bank Management System with authentication, admin dashboard and notifications.</p></div>
+</section>
 
-        </div>
-    </section>
-    <section id="about">
-    <p class="section__text__p1">Get to know more</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assets/experience.png" 
-                    alt="experience icon"
-                    class="icon"
-                    />
-                    <h1>Experience</h1>
-                    <p>Graduate<br>Software Testing, AI/LLM, Software Development</p>
-                </div>
-                <div class="details-container">
-                    <img src="./assets/education.png" 
-                    alt="education icon"
-                    class="icon"
-                    />
-                    <h1>Education</h1>
-                    <p>Bachelor of Engineering (BE) in <br>Artficial Intelligence and Machine Learning</p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>Hello! Skilled in full-stack development using Java, React.js, Node.js, Express.js, MongoDB, SQL, and REST
-                    APIs, with experience building scalable web and mobile applications. Experienced in SoftwareTesting AI/LLM 
-                    analysis, prompt evaluation, chatbot workflows, data annotation, and response validation. Strong in problem-solving, 
-                    API integration, debugging, teamwork, and developing Al-powered application features.
-                </p>
-            </div>
-        </div>
-    </div>
-    <img src="./assets/arrow.png" 
-    alt="Arrow icon" 
-    class="icon arrow"
-    onclick="location.href='./#experience'"
-    />
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Front-End</h2>
-              <div class="article-container">
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Expert</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Expert</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JS</h3>
-                    <p>Expert</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                
-                <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Tailwind</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
-                  
-                <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Bootstrap</h3>
-                      <p>Intermediate</p>
-                    </div>
-                </article>
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>AWS Academy Cloud Foundation</li>
+<li>Advanced C++ (IIT Bombay)</li>
+<li>Java (IIT Bombay)</li>
+</ul>
+</section>
 
+<section id="leadership">
+<h2>Leadership</h2>
+<p>Management Team Coordinator, M-Pulse Student Association</p>
+<p>Captain, College Hockey Team (SPPU 3rd Place)</p>
+</section>
 
-                  
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: omtandulkar01@gmail.com</p>
+<p>Phone: +91 7249119949</p>
+<p>Pune, Maharashtra</p>
+</section>
 
-            </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Back-End & Database</h2>
-              <div class="article-container">
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MongoDB</h3>
-                    <p>Expert</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SQL</h3>
-                    <p>Expert</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PHP</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-    </section>
-      
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-
-
-            <div class="details-container color-container">
-              
-              <div class="article-container">
-                <img
-                  src="https://play-lh.googleusercontent.com/jFcFj9dMkjXDlbywqBhU498AqdDySYD0KFOU88HL0POOrdSzDO9IO3WMGYoDHEvo"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Podcast player </h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://github.com/Omaa2233/Podcast-player')"
-                >
-                  Github
-                
-              </div>
-            </div>
-
-
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://repository-images.githubusercontent.com/152029248/bdcac480-f326-11e9-8aa5-dafa9940739b"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Blood Bank Management System
-              </h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://github.com/Omaa2233/Blood-Bank-Management-System')"
-                >
-                  Github
-                
-              </div>
-            </div>
-
-
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://play-lh.googleusercontent.com/CURWh1u-LhfE2r0o3zgh2ydF7rATdpnoM16Kq-3RaAIoy4WsHfHsrws8LnZa5aXHiW3G"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Rock Paper Scissors Game</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('https://github.com/Omaa2233/Rock-Paper-Scissors-Game-')"
-                >
-                  Github
-                </button>
-                
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      
-      
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a onclick="window.open('mailto:omatandulkar@gmail.com')" style="cursor: pointer;">Gmail</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a onclick="window.open('https://www.linkedin.com/in/om-tandulkar-945062231/')" style="cursor: pointer;">LinkedIn</a></p>
-          </div>
-        </div>
-        
-      </section>
-      
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
